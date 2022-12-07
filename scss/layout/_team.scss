@@ -1,0 +1,103 @@
+/*  Team secsion */
+.team {
+  padding-top: 94px;
+  background: #f5f4fa;
+}
+
+.team-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+  margin: 0%;
+
+  width: 1170px;
+}
+.team__item {
+  width: 270px;
+  height: 428px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-desc {
+  padding-top: 30px;
+  padding-left: 59px;
+  padding-right: 59px;
+}
+
+.team-subtitle {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+  margin-bottom: 10px;
+}
+.team__description {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+  margin-bottom: 16px;
+}
+/* Socials */
+.socials {
+  display: flex;
+  gap: 10px;
+  margin: 0%;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  width: 44px;
+  height: 44px;
+  color: var(--social-link-cl);
+  background-color: #ffffff;
+  border-radius: 50%;
+  /* outline: 2px solid red; */
+  outline-offset: -2px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-w-txt-cl);
+    background-color: var(--blue-bg-cl);
+  }
+}
+.socials__icon {
+  fill: currentColor;
+}
+/* 2-й Спосіб вказання кольору іконки  */
+/* .socials-icon {
+  fill: #afb1b8;
+} */
+/* .socials-link:hover {
+  background-color: #2196f3;
+}
+.socials-link:hover .socials-icon {
+  fill: #ffffff;
+} */

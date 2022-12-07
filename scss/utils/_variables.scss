@@ -1,0 +1,26 @@
+/*
+  |==============================
+  | block 1
+  |==============================
+*/
+
+:root {
+  /* fonts  */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'raleway', sans-serif;
+  /* text colors */
+  --main-txt-cl: #757575;
+  --acent-txt-cl: #2196f3;
+  --secondary-txt-cl: #000000;
+  --secondary-w-txt-cl: #ffffff;
+  --social-link-cl: #afb1b8;
+
+  /* bg colors */
+  --grey-bg-cl: #2f303a;
+  --light-bg-cl: #e5e5e5;
+  --blue-bg-cl: #2196f3;
+  /* others  */
+
+  --items: 3;
+  --indent: 30px;
+}

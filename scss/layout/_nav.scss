@@ -1,0 +1,96 @@
+.nav__list {
+  display: flex;
+  gap: 50px;
+}
+.nav__link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  /* Другий спосіб додавання плавних переходів  */
+  /* значення властивості для якої буде здійснено плавний перехід за заданий час,якщо не встановити властивості переходу,то застосується all*/
+  transition-property: color;
+  /* Час за який буде здійснено перехід від одного значення до іншого */
+  transition-duration: 250ms;
+  /* Функція розподілення  часу пропорційно до швидкості переходу стану */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Затримка перед початком переходу */
+  transition-delay: 0s;
+
+  /* Hover Focus and Heder */
+  &:hover,
+  &:focus {
+    color: var(--acent-txt-cl);
+  }
+
+  &--current {
+    position: relative;
+    color: var(--acent-txt-cl);
+  }
+  /* Подчеркивание текущей страницы */
+  &--current::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+.nav-mail__icons,
+.nav-tel {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.nav-mail {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+
+  &:hover,
+  &:focus {
+    color: var(--acent-txt-cl);
+  }
+}
+.nav-tel {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+
+  &:hover,
+  &:focus {
+    color: var(--acent-txt-cl);
+  }
+}
