@@ -15,6 +15,16 @@
 .header__container {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 80px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 480px;
+    height: 60px;
+  }
 }
 
 .header__logo {
@@ -24,6 +34,11 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--acent-txt-cl);
+
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 .header__logo__black {
   font-family: var(--secondary-font);
@@ -33,12 +48,32 @@
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
   margin-right: 93px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 .header__nav {
-  margin-right: auto;
+  // margin-right: auto;
+
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
 }
 
-// Heder 2 page 
+// Heder 2 page
 .header-page {
   border-bottom: 1px solid #ececec;
 }

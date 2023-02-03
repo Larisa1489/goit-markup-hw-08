@@ -34,6 +34,58 @@
         <a class="logo header__logo link" href="/" lang="en"
           >Web<span class="header__logo__black">Studio</span></a
         >
+        <!-- Mobile btn -->
+        <button class="menu-btn js-open-menu" type="button">
+          <svg class="" width="40" height="40">
+            <use href="./images/icons.svg#menu_40px"></use>
+            <!-- <use href="./images/icons.svg#close_40px"></use> -->
+          </svg>
+        </button>
+
+        <!-- Mobile menu -->
+        <div class="menu-overlay js-menu-container">
+          <div class="menu-container">
+            <button class="menu-btn js-close-menu" type="button">
+              <svg class="" width="40" height="40">
+                <use href="./images/icons.svg#close_40px"></use>
+              </svg>
+            </button>
+            <ul class="mobile-list list">
+              <li class="mobile__item">
+                <a href="./index.html" class="mobile__link mobile__link--current link">Студия</a>
+              </li>
+              <li class="mobile__item">
+                <a href="./portfolio.html" class="mobile__link link">Портфолио</a>
+              </li>
+              <li class="mobile__item">
+                <a href="" class="mobile__link link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mobile-list-contacts list">
+              <li class="mobile__item-contacts">
+                <a href="" class="mobile__link-contacts link">+38 096 111 11 11 </a>
+              </li>
+              <li class="mobile__item-contacts">
+                <a href="" class="mobile__link-contacts-mail link"> info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-socials-list list">
+              <li class="mobile__socials-item">
+                <a href="" class="mobile__socials-link link">Instagram</a>
+              </li>
+              <li class="mobile__socials-item">
+                <a href="" class="mobile__socials-link link">Twitter</a>
+              </li>
+              <li class="mobile__socials-item">
+                <a href="" class="mobile__socials-link link">Facebook</a>
+              </li>
+              <li class="mobile__socials-item">
+                <a href="" class="mobile__socials-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <nav class="nav header__nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -47,18 +99,20 @@
             </li>
           </ul>
         </nav>
-        <a class="nav-mail link" href="mailto:info@devstudio.com">
-          <svg class="nav-mail__icons" width="16" height="12">
-            <use href="./images/icons.svg#envelope"></use>
-          </svg>
-          info@devstudio.com
-        </a>
-        <a class="nav-tel link" href="tel:380961111111 ">
-          <svg class="nav-tel__icons" width="10" height="16">
-            <use href="./images/icons.svg#smartphone"></use>
-          </svg>
-          +38 096 111 11 11
-        </a>
+        <span class="tablet">
+          <a class="nav-mail link" href="mailto:info@devstudio.com">
+            <svg class="nav-mail__icons" width="16" height="12">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+          <a class="nav-tel link" href="tel:380961111111 ">
+            <svg class="nav-tel__icons" width="10" height="16">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </span>
       </div>
     </header>
     <!-- HEADER section -->
@@ -136,7 +190,11 @@
             <li class="section-list__item">
               <img
                 class="section__logo"
-                src="./images/description/photo1.jpg"
+                srcset="
+                  ./images/description/img-3@1x_Lg.jpg 1x,
+                  ./images/description/img-3@2x_Lg.jpg 2x
+                "
+                src="./images/description/img-3@1x_Lg.jpg"
                 alt="компьютер"
                 width="370"
                 height="294"
@@ -149,7 +207,11 @@
             <li class="section-list__item">
               <img
                 class="section__logo"
-                src="./images/description/photo2.jpg"
+                srcset="
+                  ./images/description/img-2@1x_Lg.jpg 1x,
+                  ./images/description/img-2@2x_Lg.jpg 2x
+                "
+                src="./images/description/img-2@1x_Lg.jpg"
                 alt="ноутбук и телефон"
                 width="370"
                 height="294"
@@ -161,7 +223,11 @@
             <li class="section-list__item">
               <img
                 class="section__logo"
-                src="./images/description/photo3.jpg"
+                srcset="
+                  ./images/description/img-1@1x_Lg.jpg 1x,
+                  ./images/description/img-1@2x_Lg.jpg 2x
+                "
+                src="./images/description/img-1@1x_Lg.jpg"
                 alt="планшет"
                 width="370"
                 height="294"
@@ -182,7 +248,8 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team/img4.jpg"
+                srcset=""
+                src="./images/team/img-1@1x_sm.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="368"
@@ -250,7 +317,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team/img-5.jpg"
+                src="./images/team/img-3@1x_sm.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="368"
@@ -318,7 +385,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team/img-6.jpg"
+                src="./images/team/img-2@1x_sm.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="368"
@@ -385,7 +452,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team/img-7.jpg"
+                src="./images/team/img-4@1x_sm.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="368"
@@ -737,6 +804,9 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/header-scroll.js"></script>
   </body>
 </html>

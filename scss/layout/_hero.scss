@@ -3,14 +3,22 @@
   margin-left: auto;
   margin-right: auto;
   background-color: var(--grey-bg-cl);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/Img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../images/hero/Header-img@1x_sm.png), url(../images/hero/Img-@2x_sm.png);
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/Header-img@1x_md.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../../images/hero/Img-@1x_Lg.png);
+  }
 }
 .hero-title {
   font-family: var(--main-font);
@@ -26,6 +34,21 @@
   height: 120px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 767px) {
+    font-style: normal;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    width: 360px;
+    height: 84px;
+  }
+
+  @media screen and (min-width: 375px) {
+    font-style: normal;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    width: 360px;
+    height: 84px;
+  }
 }
 .hero-btn {
   font-family: var(--main-font);
