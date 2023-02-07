@@ -8,6 +8,10 @@
   display: flex;
   align-items: baseline;
   gap: 70px;
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+  }
 }
 
 .footer-logo__img {
@@ -20,6 +24,20 @@
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--acent-txt-cl);
+
+  @media screen and (max-width: 768px) {
+    font-style: normal;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    text-align: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-style: normal;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    text-align: center;
+  }
 }
 .footer__white {
   color: var(--secondary-w-txt-cl);

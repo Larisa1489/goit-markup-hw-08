@@ -34,6 +34,7 @@
         <a class="logo header__logo link" href="/" lang="en"
           >Web<span class="header__logo__black">Studio</span></a
         >
+
         <!-- Mobile btn -->
         <button class="menu-btn js-open-menu" type="button">
           <svg class="" width="40" height="40">
@@ -42,49 +43,7 @@
           </svg>
         </button>
 
-        <!-- Mobile menu -->
-        <div class="menu-overlay js-menu-container">
-          <div class="menu-container">
-            <button class="menu-btn js-close-menu" type="button">
-              <svg class="" width="40" height="40">
-                <use href="./images/icons.svg#close_40px"></use>
-              </svg>
-            </button>
-            <ul class="mobile-list list">
-              <li class="mobile__item">
-                <a href="./index.html" class="mobile__link mobile__link--current link">Студия</a>
-              </li>
-              <li class="mobile__item">
-                <a href="./portfolio.html" class="mobile__link link">Портфолио</a>
-              </li>
-              <li class="mobile__item">
-                <a href="" class="mobile__link link">Контакты</a>
-              </li>
-            </ul>
-            <ul class="mobile-list-contacts list">
-              <li class="mobile__item-contacts">
-                <a href="" class="mobile__link-contacts link">+38 096 111 11 11 </a>
-              </li>
-              <li class="mobile__item-contacts">
-                <a href="" class="mobile__link-contacts-mail link"> info@devstudio.com</a>
-              </li>
-            </ul>
-            <ul class="mobile-socials-list list">
-              <li class="mobile__socials-item">
-                <a href="" class="mobile__socials-link link">Instagram</a>
-              </li>
-              <li class="mobile__socials-item">
-                <a href="" class="mobile__socials-link link">Twitter</a>
-              </li>
-              <li class="mobile__socials-item">
-                <a href="" class="mobile__socials-link link">Facebook</a>
-              </li>
-              <li class="mobile__socials-item">
-                <a href="" class="mobile__socials-link link">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <!-- </div> -->
 
         <nav class="nav header__nav">
           <ul class="nav__list list">
@@ -137,22 +96,79 @@
                 <use href="./images/icons.svg#antenna"></use>
               </svg>
             </li>
+
+            <li class="about__item-mobile">
+              <h3 class="about__mobile-subtitle">Внимание к деталям</h3>
+              <p class="about__mobile-subtitle-text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
             <li class="about-icons__item">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#clock"></use>
               </svg>
             </li>
+            <li class="about__item-mobile">
+              <h3 class="about__mobile-subtitle">Пунктуальность</h3>
+              <p class="about__mobile-subtitle-text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+
+            <!-- tablet -->
+            <li class="about__item-tablet">
+              <h3 class="about__tablet-subtitle">Внимание к деталям</h3>
+              <p class="about__tablet-subtitle__text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="about__item-tablet">
+              <h3 class="about__tablet-subtitle">Пунктуальность</h3>
+              <p class="about__tablet-subtitle__text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+
             <li class="about-icons__item">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#diagram"></use>
               </svg>
+            </li>
+            <li class="about__item-mobile">
+              <h3 class="about__mobile-subtitle">Планирование</h3>
+              <p class="about__mobile-subtitle-text">
+                Равным образом консультация сшироким активом в значительной степени обуславливает.
+              </p>
             </li>
             <li class="about-icons__item">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#astronaut"></use>
               </svg>
             </li>
+
+            <!-- tablet -->
+            <li class="about__item-tablet">
+              <h3 class="about__tablet-subtitle">Планирование</h3>
+              <p class="about__tablet-subtitle__text">
+                Равным образом консультация сшироким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="about__item-tablet">
+              <h3 class="about__tablet-subtitle">Современные технологии</h3>
+              <p class="about__tablet-subtitle__text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+
+            <li class="about__item-mobile">
+              <h3 class="about__mobile-subtitle">Современные технологии</h3>
+              <p class="about__mobile-subtitle-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
           </ul>
+
+          <!-- Desktop about list-->
           <ul class="about-list list">
             <li class="about__item">
               <h3 class="about-subtitle">Внимание к деталям</h3>
@@ -248,11 +264,15 @@
             <li class="team__item">
               <img
                 class="team__img"
-                srcset=""
-                src="./images/team/img-1@1x_sm.jpg"
+                srcset="
+                  ./images/team/img-4@2x_sm.jpg 2x,
+                  ./images/team/img-4@1x_md.jpg 1x,
+                  ./images/team/img-4@2x_md.jpg 2x
+                "
+                src="./images/team/img-4@1x_sm.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="368"
+                width="450"
+                height="460"
               />
               <div class="team-desc">
                 <h3 class="team-subtitle">Игорь Демьяненко</h3>
@@ -319,8 +339,8 @@
                 class="team__img"
                 src="./images/team/img-3@1x_sm.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="368"
+                width="450"
+                height="460"
               />
               <div class="team-desc">
                 <h3 class="team-subtitle">Ольга Репина</h3>
@@ -387,8 +407,8 @@
                 class="team__img"
                 src="./images/team/img-2@1x_sm.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="368"
+                width="450"
+                height="460"
               />
               <div class="team-desc">
                 <h3 class="team-subtitle">Николай Тарасов</h3>
@@ -452,10 +472,10 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team/img-4@1x_sm.jpg"
+                src="./images/team/img-1@1x_sm.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="368"
+                width="450"
+                height="460"
               />
               <div class="team-desc">
                 <h3 class="team-subtitle">Михаил Ермаков</h3>
@@ -802,6 +822,52 @@
           </button>
           <!-- <button type="reset">reset</button> -->
         </form>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="menu-overlay js-menu-container">
+      <div class="menu-container">
+        <button class="menu-btn js-close-menu" type="button">
+          <svg class="" width="40" height="40">
+            <use href="./images/icons.svg#close_40px"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-list list">
+          <li class="mobile__item">
+            <a href="./index.html" class="mobile__link mobile__link--current link">Студия</a>
+          </li>
+          <li class="mobile__item">
+            <a href="./portfolio.html" class="mobile__link link">Портфолио</a>
+          </li>
+          <li class="mobile__item">
+            <a href="" class="mobile__link link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-list-contacts list">
+          <li class="mobile__item-contacts">
+            <a href="" class="mobile__link-contacts link">+38 096 111 11 11 </a>
+          </li>
+          <li class="mobile__item-contacts">
+            <a href="" class="mobile__link-contacts-mail link"> info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-socials-list list">
+          <li class="mobile__socials-item">
+            <a href="" class="mobile__socials-link link">Instagram</a>
+          </li>
+          <li class="mobile__socials-item">
+            <a href="" class="mobile__socials-link link">Twitter</a>
+          </li>
+          <li class="mobile__socials-item">
+            <a href="" class="mobile__socials-link link">Facebook</a>
+          </li>
+          <li class="mobile__socials-item">
+            <a href="" class="mobile__socials-link link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
 

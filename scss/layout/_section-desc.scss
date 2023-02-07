@@ -2,6 +2,14 @@
 .section {
   padding-top: 94px;
 }
+.description {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 
 .section-title {
   font-family: var(--main-font);
