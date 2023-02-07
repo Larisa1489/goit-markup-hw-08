@@ -1878,9 +1878,16 @@ img {
 }
 @media screen and (max-width: 480px) {
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
   }
 }
 
