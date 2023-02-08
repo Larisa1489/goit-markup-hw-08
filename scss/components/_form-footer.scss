@@ -1,5 +1,20 @@
 .footer__form {
   margin-left: 50px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    // margin-left: 0;
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 .form-title {
   font-family: var(--main-font);
@@ -10,6 +25,9 @@
   text-transform: uppercase;
   color: var(--secondary-w-txt-cl);
   margin-bottom: 20px;
+  @media screen and (max-width: 480px) {
+    // text-align: center;
+  }
 }
 .form__email {
   display: flex;
@@ -19,6 +37,15 @@
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+  }
 }
 // .form-label {
 // }
@@ -37,6 +64,18 @@
   &:hover,
   &:focus {
     border-color: #ffffff;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 100%;
+    height: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
   }
 }
 .form__input::placeholder {
@@ -59,6 +98,12 @@
   &:hover,
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .form-btn__txt {

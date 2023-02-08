@@ -70,6 +70,12 @@
     flex-basis: calc(100% / 2 - 30px);
     margin: 0;
   }
+  // @media screen and (max-width: 375px) {
+  //   justify-content: flex-start;
+  //   flex-wrap: wrap;
+  //   flex-basis: calc(100% / 2 - 30px);
+  //   margin: 0;
+  // }
 }
 .clients__item {
   @media screen and (max-width: 768px) {
@@ -80,6 +86,10 @@
     width: 210px;
     height: 92px;
   }
+  // @media screen and (max-width: 375px) {
+  //   width: 130px;
+  //   height: 92px;
+  // }
 }
 
 .clients__link {
