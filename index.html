@@ -260,18 +260,28 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team__item">
-              <img
-                class="team__img"
-                srcset="
-                  ./images/team/img-4@2x_sm.jpg 2x,
-                  ./images/team/img-4@1x_md.jpg 1x,
-                  ./images/team/img-4@2x_md.jpg 2x
-                "
-                src="./images/team/img-4@1x_sm.jpg"
-                alt="Игорь Демьяненко"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  class="team__img"
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img-1@1x_lg270.jpg 1x, ./images/team/img-1@2x_lg270.jpg 2x"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img-1@1x_md354.jpg 1x, ./images/team/img-1@2x_md354.jpg 2x"
+                />
+
+                <img
+                  class="portholio-logo"
+                  srcset="./images/team/img-1@1x_sm450.jpg 1x, ./images/team/img-1@2x_sm450.jpg 2x"
+                  src="./images/team/img-1@1x_sm450.jpg"
+                  width="450"
+                  alt="Игорь Демьяненко"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-desc">
                 <h3 class="team-subtitle">Игорь Демьяненко</h3>
                 <p class="team__description" lang="en">Product Designer</p>
@@ -333,13 +343,28 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/img-3@1x_sm.jpg"
-                alt="Ольга Репина"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  class="team__img"
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img-2@1x_lg270.jpg 1x, ./images/team/img-2@2x_lg270.jpg 2x"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img-2@1x_md354.jpg 1x, ./images/team/img-2@2x_md354.jpg 2x"
+                />
+
+                <img
+                  class="portholio-logo"
+                  srcset="./images/team/img-2@1x_sm450.jpg 1x, ./images/team/img-2@2x_sm450.jpg 2x"
+                  src="./images/team/img-2@1x_sm450.jpg"
+                  width="450"
+                  alt="Ольга Репина"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-desc">
                 <h3 class="team-subtitle">Ольга Репина</h3>
                 <p class="team__description" lang="en">Frontend Developer</p>
@@ -401,13 +426,28 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/img-2@1x_sm.jpg"
-                alt="Николай Тарасов"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  class="team__img"
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img-3@1x_lg270.jpg 1x, ./images/team/img-3@2x_lg270.jpg 2x"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img-3@1x_md354.jpg 1x, ./images/team/img-3@2x_md354.jpg 2x"
+                />
+
+                <img
+                  class="portholio-logo"
+                  srcset="./images/team/img-3@1x_sm450.jpg 1x, ./images/team/img-3@2x_sm450.jpg 2x"
+                  src="./images/team/img-3@1x_sm450.jpg"
+                  width="450"
+                  alt="Николай Тарасов"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-desc">
                 <h3 class="team-subtitle">Николай Тарасов</h3>
                 <p class="team__description" lang="en">Marketing</p>
@@ -468,13 +508,28 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/img-1@1x_sm.jpg"
-                alt="Михаил Ермаков"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  class="team__img"
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img-4@1x_lg270.jpg 1x, ./images/team/img-4@2x_lg270.jpg 2x"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img-4@1x_md354.jpg 1x, ./images/team/img-4@2x_md354.jpg 2x"
+                />
+
+                <img
+                  class="portholio-logo"
+                  srcset="./images/team/img-4@1x_sm450.jpg 1x, ./images/team/img-4@2x_sm450.jpg 2x"
+                  src="./images/team/img-4@1x_sm450.jpg"
+                  width="450"
+                  alt="Михаил Ермаков"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-desc">
                 <h3 class="team-subtitle">Михаил Ермаков</h3>
                 <p class="team__description" lang="en">UI Designer</p>
@@ -842,7 +897,7 @@
             <a href="./portfolio.html" class="mobile__link link">Портфолио</a>
           </li>
           <li class="mobile__item">
-            <a href="" class="mobile__link link">Контакты</a>
+            <a href="#address-contacts" class="mobile__link link">Контакты</a>
           </li>
         </ul>
 

@@ -71,7 +71,15 @@
 .mobile-list {
   margin-bottom: auto;
 }
-
+.mobile__item {
+  margin-bottom: 32px;
+}
+.mobile__item:last-child {
+  margin-bottom: 0;
+}
+.mobile__item-contacts:first-child {
+  margin-bottom: 32px;
+}
 .mobile__link {
   font-family: var(--main-font);
   font-style: normal;

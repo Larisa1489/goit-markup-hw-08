@@ -36,6 +36,12 @@
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+  @media screen and (max-width: 480px) {
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+  }
 }
 
 .modal-form-input {
@@ -49,6 +55,15 @@
   cursor: pointer;
   padding-left: 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 480px) {
+    width: 370px;
+    height: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 370px;
+    height: 40px;
+  }
 }
 /* .modal-form-input:focus + .modal-form-label {
   transform: translateY(-5px);
@@ -116,6 +131,15 @@
   padding-top: 10px;
   resize: none;
   cursor: pointer;
+
+  @media screen and (max-width: 480px) {
+    width: 370px;
+    height: 120px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 370px;
+    height: 120px;
+  }
 }
 .modal-form-input:focus-within + .modal-form-icon,
 .modal-form-input:hover + .modal-form-icon {
@@ -144,6 +168,24 @@
   text-align: center;
   user-select: none;
   cursor: pointer;
+  @media screen and (max-width: 480px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    left: 70px;
+    bottom: 110px;
+  }
+  @media screen and (max-width: 768px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    left: 70px;
+    bottom: 110px;
+  }
 }
 .checkbox-text {
   color: var(--acent-txt-cl);
@@ -153,6 +195,17 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    text-decoration-line: underline;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    text-decoration-line: underline;
+  }
 }
 
 .icon {
@@ -164,6 +217,17 @@
   border: 2px solid #212121;
   border-radius: 2px;
   cursor: pointer;
+  @media screen and (max-width: 480px) {
+    width: 16px;
+    height: 15px;
+    left: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    left: 40px;
+    width: 16px;
+    height: 15px;
+  }
 }
 .checkbox:checked + .icon {
   background-color: #2196f3;
@@ -243,6 +307,14 @@
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 120px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 120px;
+  }
 }
 
 .modal-form-btn-txt {

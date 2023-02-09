@@ -37,6 +37,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px 40px;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
