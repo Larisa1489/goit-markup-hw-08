@@ -63,6 +63,11 @@
   .menu-overlay.is-open & {
     transform: translateX(0);
   }
+  @media screen and (max-width: 428px) {
+    max-width: 428px;
+
+    height: 100%;
+  }
 }
 
 .mobile-list-contacts {

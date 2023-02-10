@@ -70,6 +70,12 @@
     flex-basis: calc(100% / 2 - 30px);
     margin: 0;
   }
+  @media screen and (max-width: 428px) {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+  }
   // @media screen and (max-width: 375px) {
   //   justify-content: flex-start;
   //   flex-wrap: wrap;

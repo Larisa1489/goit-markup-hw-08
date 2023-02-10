@@ -64,6 +64,11 @@
     flex-direction: column;
     width: 450px;
   }
+  @media screen and (max-width: 428px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .team__item {
   width: 270px;
@@ -81,6 +86,9 @@
   @media screen and (max-width: 480px) {
     width: 450px;
     height: 622px;
+  }
+  @media screen and (max-width: 428px) {
+    width: 100%;
   }
 }
 .team-desc {
