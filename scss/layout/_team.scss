@@ -88,7 +88,9 @@
     height: 622px;
   }
   @media screen and (max-width: 428px) {
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .team-desc {

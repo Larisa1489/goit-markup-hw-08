@@ -844,7 +844,7 @@ img {
 }
 @media screen and (max-width: 428px) {
   .form__input {
-    width: 100%;
+    width: 90%;
     height: 50px;
   }
 }
@@ -1418,13 +1418,13 @@ img {
     height: 84px;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
   .hero-title {
     font-style: normal;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.6153846154;
-    width: 360px;
-    height: 84px;
+    width: 320px;
+    height: 60px;
   }
 }
 
@@ -1553,6 +1553,14 @@ img {
     margin: 0;
   }
 }
+@media screen and (max-width: 428px) {
+  .about-icons__item {
+    width: 95%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .about-list {
   display: -webkit-box;
@@ -1640,8 +1648,8 @@ img {
 }
 @media screen and (max-width: 428px) {
   .about__mobile-subtitle-text {
-    width: 100%;
-    text-align: left;
+    width: 95%;
+    text-align: center;
   }
 }
 
@@ -1873,7 +1881,9 @@ img {
 }
 @media screen and (max-width: 428px) {
   .team__item {
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

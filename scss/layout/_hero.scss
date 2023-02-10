@@ -17,6 +17,16 @@
       url(../images/hero/Header-img@2x_sm.png);
   }
 
+  // @media screen and (min-width: 480px) {
+  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url(../images/hero/Header-img@1x_sm.png);
+
+  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //       url(../images/hero/Header-img@2x_sm.png);
+  //   }
+  // }
+
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/Header-img@1x_md.png);
@@ -59,12 +69,12 @@
     height: 84px;
   }
 
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 320px) {
     font-style: normal;
-    font-size: 26px;
+    font-size: 20px;
     line-height: calc(42 / 26);
-    width: 360px;
-    height: 84px;
+    width: 320px;
+    height: 60px;
   }
 }
 .hero-btn {
