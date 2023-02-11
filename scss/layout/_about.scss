@@ -20,7 +20,13 @@
   display: flex;
   gap: 30px;
   align-items: center;
-  justify-content: space-around;
+  // justify-content: space-around;
+
+  @media screen and (max-width: 1100px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -41,6 +47,17 @@
   justify-content: space-around;
   margin-bottom: 30px;
   border-radius: 4px;
+
+  @media screen and (max-width: 1100px) {
+    width: 354px;
+
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and (max-width: 768px) {
     // width: calc((100% - 30px) / 2);
@@ -67,8 +84,9 @@
 .about-list {
   display: flex;
   gap: 30px;
+  text-align: left;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -154,6 +172,10 @@
   }
   @media screen and (max-width: 480px) {
     display: none;
+  }
+  @media screen and (max-width: 1100px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .about__tablet-subtitle {

@@ -60,6 +60,9 @@
   @media screen and (max-width: 768px) {
     display: inline;
   }
+  @media screen and (max-width: 1100px) {
+    display: inline;
+  }
 }
 .nav-mail {
   font-family: var(--main-font);
@@ -93,6 +96,11 @@
     margin-right: 0;
     margin-bottom: 10px;
   }
+  @media screen and (max-width: 1100px) {
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 .nav-tel {
   font-family: var(--main-font);
@@ -122,5 +130,9 @@
   }
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (max-width: 1100px) {
+    padding: 0;
+    margin-right: 0;
   }
 }
