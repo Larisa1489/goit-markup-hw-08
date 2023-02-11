@@ -17,6 +17,12 @@
 .header__container {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 428px) {
+    width: 95%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 95%;
+  }
 
   @media screen and (max-width: 768px) {
     max-width: 768px;
@@ -44,6 +50,8 @@
   @media screen and (max-width: 480px) {
     font-size: 24px;
     line-height: 28px;
+  }
+  @media screen and (max-width: 428px) {
   }
 }
 .header__logo__black {
