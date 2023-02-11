@@ -10,7 +10,16 @@
     padding: 0;
     margin-bottom: 60px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  // @media screen and (max-width: 480px) {
+  //   flex-wrap: wrap;
+  // }
+
+  @media screen and (max-width: 1199px) {
     padding: 0;
     margin-bottom: 60px;
   }
@@ -22,7 +31,7 @@
   align-items: center;
   // justify-content: space-around;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -33,7 +42,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
   @media screen and (max-width: 480px) {
     display: flex;
   }
@@ -48,7 +59,7 @@
   margin-bottom: 30px;
   border-radius: 4px;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1199px) {
     width: 354px;
 
     margin: 0;
@@ -68,6 +79,10 @@
     flex-direction: column;
     gap: 30px;
     // justify-content: space-between;
+  }
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin: 0;
   }
   @media screen and (max-width: 480px) {
     width: 450px;
@@ -168,6 +183,9 @@
 */
 .about__item-tablet {
   @media screen and (min-width: 1199px) {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (max-width: 480px) {
